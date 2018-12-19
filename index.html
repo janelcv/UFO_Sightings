@@ -22,30 +22,26 @@
         </div>
       </div>
     </nav>
-
     <div class="hero text-center">
       <h1>UFO Sightings</h1>
       <p>The Truth is Out There</p>
       <form class="form-inline" id="fh5co-header-subscribe">
       <div class="col-md-10 col-md-offset-1">
         <form id="search-box">
-          <input type="text" class="form-control" onkeyup="myFunction0()" id="datetime" placeholder="Filter by Date">
-          <input type="text" class="form-control" onkeyup="myFunction1()" id="city" placeholder="Filter by City">
-          <input type="text" class="form-control" onkeyup="myFunction2()" id="state" placeholder="Filter by State">
-          <input type="text" class="form-control" onkeyup="myFunction3()" id="country" placeholder="Filter by Country">
-          <input type="text" class="form-control" onkeyup="myFunction4()" id="shape" placeholder="Filter by Shape">
+          <input type="text" class="form-control form" onkeyup="filterByDate()" id="datetime" placeholder="Filter by Date">
+          <input type="text" class="form-control form" onkeyup="filterByCity()" id="city" placeholder="Filter by City">
+          <input type="text" class="form-control form" onkeyup="filterByState()" id="state" placeholder="Filter by State">
+          <input type="text" class="form-control form" onkeyup="filterByCountry()" id="country" placeholder="Filter by Country">
+          <input type="text" class="form-control form" onkeyup="filterByShape()" id="shape" placeholder="Filter by Shape">
         </form>
       </div>
-    </form>
     </div>
 
         <div class="col-md-12">
-          <div id="table-area" class="">
             <table id="ufo-table" class="table table-striped">
               <thead></thead>
               <tbody></tbody>
             </table>
-          </div>
         </div>
 
 
