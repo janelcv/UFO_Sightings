@@ -1,7 +1,7 @@
 # UFO_Sightings
 
 ### STILL Don't Believe In ALIENS? Watch This And Think Again!
-![ufo](ufo.png)
+![ufo](ufo_image.png)
 
 #### Description
 
