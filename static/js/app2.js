@@ -40,7 +40,6 @@ submit.on("click", function() {
   d3.event.preventDefault();
 
   var inputTbody = d3.select("tbody");
-  var loadFiltData = "n";
 
   // Select the input element and get the raw HTML node
   var inputDate = d3.select("#datetime"); 
