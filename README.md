@@ -10,11 +10,11 @@
 #### Methodology
 Project has two version:
 * In the first version [onkeyup](https://www.w3schools.com/jsref/event_onkeyup.asp) event was used to filter the data. This version is stored in file [app.js](https://github.com/janelcv/UFO_Sightings/blob/master/static/js/app.js) and [index.html](https://github.com/janelcv/UFO_Sightings/blob/master/index.html)
->Data will by filtred once you start typing in input field and will be filtered by one filter each time.
+>Data will be filtred once you start typing in input field and will be filtered by one filter each time.
 * In the second version [onclick](https://www.w3schools.com/jsref/event_onclick.asp) event was used to filter data by several filters once the button is pressed. This version is stored in [app2.js](https://github.com/janelcv/UFO_Sightings/blob/master/static/js/app2.js) and [index2.html](https://github.com/janelcv/UFO_Sightings/blob/master/index2.html)
 
 
-1. ###HTML creation.
+1. ### HTML creation.
 * HTML file was created using the [Bootstap Library](https://getbootstrap.com).
 ```html
 
