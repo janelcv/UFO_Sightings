@@ -88,7 +88,7 @@ tr[i].style.display = "";
 } else {
 tr[i].style.display = "none";
 }
-}       
+}
 }
 };
 ```
@@ -112,27 +112,21 @@ d3.event.preventDefault();
 
 var inputTbody = d3.select("tbody");
 
-// Select the input element and get the raw HTML node
-var inputDate = d3.select("#datetime"); 
-var inputCity= d3.select("#city");
-var inputState = d3.select("#state");
-var inputCountry = d3.select("#country")
-var inputShape   = d3.select("#shape")
-
-// Get the value property of the input element
-var dateValue = inputDate.property("value");
-var cityValue = inputCity.property("value");
-var stateValue = inputState.property("value");
-var countryValue = inputCountry.property("value");
-var shapeValue = inputShape.property("value");
-
-console.log(dateValue);
-console.log(stateValue);
-console.log(cityValue);
-console.log(countryValue);
-console.log(shapeValue);
-
-var filteredData = tableData.filter(ufo => (ufo.datetime === dateValue) && (ufo.state === stateValue));
+var keyword_pairs = [{"id":"#datetime","key":"datetime"},
+{"id":"#city","key":"city"},
+{"id":"#state","key":"state"},
+{"id":"#country","key":"country"},
+{"id":"#shape","key":"shape"},]
+var filteredData = tableData;
+keyword_pairs.forEach(function(keyword){
+var my_value = d3.select(keyword.id).property("value");
+console.log(my_value);
+if(my_value != ""){
+filteredData = filteredData.filter(ufo=> {
+return (ufo[keyword.key] === my_value)
+});
+}
+});
 
 console.log(filteredData);
 // //Clear all previuos data from UFO table
